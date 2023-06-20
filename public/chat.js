@@ -1,5 +1,5 @@
 
-const socket = io.connect('https://transcendent-crostata-8d071d.netlify.app/')
+const socket = io.connect('index.html')
 // target all the required dom elements
 const chatForm = document.querySelector('.chat-input-group');
 const handle = document.querySelector('.handle');
