@@ -2,9 +2,12 @@ const express = module.require('express')
 const socket = module.require('socket.io')
 const path = module.require('path')
 const dotenv = module.require('dotenv')
+const cors = module.require('cors')
+
 
 // create app from express
 const app = express()
+app.use(cors())
 
 
 // configuring dotenv

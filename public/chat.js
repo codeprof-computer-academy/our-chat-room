@@ -1,4 +1,5 @@
 
+const socket = io.connect('https://transcendent-crostata-8d071d.netlify.app/')
 // target all the required dom elements
 const chatForm = document.querySelector('.chat-input-group');
 const handle = document.querySelector('.handle');
@@ -10,7 +11,7 @@ chatForm.addEventListener('submit', (e)=>{
       onChatSent()
 })
 
-const socket = io.connect()
+
 
 function onChatSent(){
     
